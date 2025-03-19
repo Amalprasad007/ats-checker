@@ -61,7 +61,7 @@ def get_ats_feedback(resume_text):
 # Streamlit UI
 st.set_page_config(page_title="ATS Resume Checker", layout="wide")
 st.title("📄 Resume Checker")
-st.write("Upload your resume to check its ATS compatibility and receive improvement suggestions.")
+st.write("Upload your resume to check its compatibility and receive improvement suggestions.")
 
 uploaded_file = st.file_uploader("Upload your PDF Resume", type=["pdf"])
 
@@ -72,5 +72,5 @@ if uploaded_file:
     if st.button("Suggestions & Feedback"):
         st.write("⏳ Analyzing your resume...")
         feedback = get_ats_feedback(resume_text)
-        st.subheader("📊 ATS Score & Feedback")
+        st.subheader("📊 Suggestion & Feedback")
         st.write(feedback)
