@@ -2,3 +2,4 @@ streamlit
 numpy
 pymupdf
 requests
+google-generativeai
