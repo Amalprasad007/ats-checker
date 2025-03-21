@@ -17,7 +17,7 @@ def extract_text_from_pdf(uploaded_file):
     return text
 
 import random
-
+ 
 def get_ats_feedback(resume_text):
     """Send resume text to Gemini API for ATS analysis with structured, point-wise feedback and dynamic scoring."""
     model = genai.GenerativeModel("gemini-1.5-flash-latest")
@@ -27,7 +27,7 @@ def get_ats_feedback(resume_text):
 
     prompt = f"""
     You are an expert in ATS resume evaluation. Analyze the resume below and provide a structured, point-wise report. 
-    The score should be dynamic, based on content quality, structure, and keyword optimization.
+    Based on content quality, structure, and keyword optimization.
 
     **Use this format:**
      
